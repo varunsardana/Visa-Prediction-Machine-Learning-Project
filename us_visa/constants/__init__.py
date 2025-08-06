@@ -21,6 +21,11 @@ FILE_NAME: str = "usvisa.csv"
 MODEL_FILE_NAME = "model.pkl"
 
 
+TARGET_COLUMN = "case_status"
+CURRENT_YEAR = date.today().year
+PREPPROCESSING_OBJECT_FILE_NAME = "preprocessor.pkl"
+SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
+
 
 
 """

@@ -1,0 +1,33 @@
+# constant varables are the variables that can be changed throughout the code wheneer u want.
+# instead of going to the code and changing the variable, you can just change it here, and it will be reflected throughout the code.
+
+import os
+from datetime import date
+
+DATABASE_NAME = "US_VISA"
+
+COLLECTION_NAME = "visa_data"
+
+MONGODB_URL_KEY = "MONGODB_URL"
+
+PIPELINE_NAME: str = "usvisa"
+ARTIFACT_DIR: str = "artifact"
+
+
+TRAIN_FILE_NAME: str = "train.csv"
+TEST_FILE_NAME: str = "test.csv"
+
+FILE_NAME: str = "usvisa.csv"
+MODEL_FILE_NAME = "model.pkl"
+
+
+
+
+"""
+Data Ingestion related constant start with DATA_INGESTION VAR NAME
+"""
+DATA_INGESTION_COLLECTION_NAME: str = "visa_data" # this is the collection name where the data will be stored in MongoDB
+DATA_INGESTION_DIR_NAME: str = "data_ingestion" # this is the directory name where the data will be stored (artifacts)
+DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store" # this will be created inside the artifacts
+DATA_INGESTION_INGESTED_DIR: str = "ingested" # this will also be inside artifacts
+DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.2 #train test split ratio
